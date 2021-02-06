@@ -1,0 +1,17 @@
+<h1>About</h1>
+<p>Welcome to Rob's page</p>
+<% rob_age = 44 %>
+<p>Rob is <%= "#{rob_age}" %> years old</p>
+<% aimee_age = 34 %>
+<p>Aimee is <%= "#{aimee_age}" %> years old</p>
+
+<p>Birth Years</p>
+<% @years.each do |n| %>
+<%= n%>
+<% end %>
+
+<%= link_to("demo", {:controller => 'demo', :action => 'index'})%>
+
+<%= link_to("All Subjects", subjects_path) %>
+
+
